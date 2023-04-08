@@ -71,6 +71,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/04/08/test/" class="article-date">
+  <time class="dt-published" datetime="2023-04-08T07:37:02.000Z" itemprop="datePublished">2023-04-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/04/08/test/">test</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="挖掘频繁项集的模式增长算法"><a href="#挖掘频繁项集的模式增长算法" class="headerlink" title="挖掘频繁项集的模式增长算法"></a>挖掘频繁项集的模式增长算法</h3><p>FPGrowth 算法</p>
+<ol>
+<li>将频繁项集数据压缩为一颗频繁模式树&#x3D;&#x3D;FP 树&#x3D;&#x3D;</li>
+<li>将压缩后的数据，为每个频繁项，划分构建条件模式库与条件 FP 树</li>
+<li>对每个新产生的条件 FP 树，重复这个过程</li>
+<li>直到 FP 树空，或者单一路径可以产生所有的频繁模式组合</li>
+</ol>
+<p>生成 FP树</p>
+<ol>
+<li>扫描数据库，统计每个项的计数，保留满足最小支持度的项，生成头指针表</li>
+<li>遍历数据集，对每一条事务：删去不再头表里的元素，其余元素按频率降序排列</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/04/08/test/" data-id="clg7nymeq0000fokuewri4wwy" data-title="test" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/04/08/hello-world/" class="article-date">
@@ -110,7 +160,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/08/hello-world/" data-id="clg7nl9rx00008cku2db1a4zy" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/08/hello-world/" data-id="clg7m9zdo0000aykud3jifl37" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -151,6 +201,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/04/08/test/">test</a>
+          </li>
         
           <li>
             <a href="/2023/04/08/hello-world/">Hello World</a>
